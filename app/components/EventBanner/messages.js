@@ -17,4 +17,8 @@ export default defineMessages({
     id: `${scope}.register`,
     defaultMessage: 'Register',
   },
+  all: {
+    id: `${scope}.all`,
+    defaultMessage: 'See all',
+  },
 });

@@ -21,7 +21,7 @@ export default function App() {
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/events" component={ EventsPage } />
+        <Route exact path="/events" component={EventsPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
