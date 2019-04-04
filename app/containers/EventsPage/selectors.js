@@ -15,8 +15,7 @@ const selectEventsPageDomain = state => state.get('eventsPage', initialState);
  * Default selector used by EventsPage
  */
 
-const makeSelectEventsPage = () =>
-  createSelector(selectEventsPageDomain, substate => substate.toJS());
+const makeSelectEvents = () =>
+  createSelector(selectEventsPageDomain, substate =>  substate.get('events'));
 
-export default makeSelectEventsPage;
-export { selectEventsPageDomain };
+export default makeSelectEvents;

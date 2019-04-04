@@ -21,7 +21,7 @@ function EventsBannerList(props) {
   return (
     <Wrapper>
       {Object.keys(events).map(event => (
-        <EventBanner key={event.id} event={events[event]} />
+        <EventBanner key={Math.random()} event={events[event]} />
       ))}
     </Wrapper>
   );

@@ -5,14 +5,14 @@
  */
 
 import { fromJS } from 'immutable';
-import { DEFAULT_ACTION } from './constants';
+import { LIST_EVENTS_SUCCESS_ACTION } from './constants';
 
 export const initialState = fromJS({});
 
 function eventsPageReducer(state = initialState, action) {
   switch (action.type) {
-    case DEFAULT_ACTION:
-      return state;
+    case LIST_EVENTS_SUCCESS_ACTION:
+      return state.set('events', action.events.data.events);
     default:
       return state;
   }

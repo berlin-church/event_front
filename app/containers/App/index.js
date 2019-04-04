@@ -12,7 +12,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import EventsPage from 'containers/EventsPage/Loadable';
+import EventsPage from 'containers/EventsPage';
 
 import GlobalStyle from '../../global-styles';
 
